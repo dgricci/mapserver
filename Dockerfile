@@ -1,5 +1,5 @@
 ## MapServer web mapping
-FROM dgricci/gdal:0.0.4
+FROM dgricci/gdal:0.0.5
 MAINTAINER Didier Richard <didier.richard@ign.fr>
 
 ARG MAPSERVER_VERSION

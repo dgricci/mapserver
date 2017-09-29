@@ -1,16 +1,17 @@
 % MapServer web mapping 
 % Didier Richard
-% 25/07/2017
+% 29/09/2017
 
 ---
 
 revision:
-    - 0.0.1 : 08/02/2017
-    - 0.0.2 : 19/02/2017
-    - 0.0.3 : 05/03/2017
-    - 0.0.4 : 12/03/2017
-    - 0.0.5 : 14/05/2017
-    - 0.0.6 : 25/07/2017
+    - 0.0.1 : 08/02/2017  
+    - 0.0.2 : 19/02/2017  
+    - 0.0.3 : 05/03/2017  
+    - 0.0.4 : 12/03/2017  
+    - 0.0.5 : 14/05/2017  
+    - 0.0.6 : 25/07/2017  
+    - 0.0.7 : 29/09/2017  
 
 ---
 
@@ -45,7 +46,7 @@ $ docker tag dgricci/mapserver:$(< VERSION) dgricci/mapserver:latest
 See `dgricci/jessie` README for handling permissions with dockers volumes.
 
 ```bash
-$ docker run --rm dgricci/mapserver
+$ docker run --rm dgricci/mapserver:$(< VERSION)
 MapServer version 7.0.6 OUTPUT=PNG OUTPUT=JPEG OUTPUT=KML SUPPORTS=PROJ
 SUPPORTS=AGG SUPPORTS=FREETYPE SUPPORTS=CAIRO SUPPORTS=SVG_SYMBOLS
 SUPPORTS=RSVG SUPPORTS=ICONV SUPPORTS=XMP SUPPORTS=FRIBIDI SUPPORTS=WMS_SERVER
